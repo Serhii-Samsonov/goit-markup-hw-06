@@ -59,11 +59,52 @@
                         <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
                             <button type="button" data-modal-close class="btn-modal">
-                                <svg class="modal-close-icon" width="11x" height="11px">
+                                <svg class="modal-close-icon cursor" width="11px" height="11px">
                                     <use href="./images/icons.svg#icon-ellips-x-close"></use>
                                 </svg>
                             </button>
-                            </div>
+        <form action="#" class="modal-form">
+            <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+        
+            <label class="modal-form-field">Имя
+                <span class="modal-form-wrapper">
+                    <input type="text" class="modal-form-input cursor" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                        title="Имя должно содержать символы кириллицы или латиницы" required />
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-name-black"></use>
+                    </svg>
+                </span>
+            </label>
+        
+            <label class="modal-form-field">Телефон
+                <span class="modal-form-wrapper">
+                    <input type="tel" class="modal-form-input cursor" name="user-tel" title="099-000-00-00"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" />
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-tel-black"></use>
+                    </svg>
+                </span>
+            </label>
+
+            <label class="modal-form-field">Почта
+                <span class="modal-form-wrapper">
+                    <input type="tel" class="modal-form-input cursor" name="user-tel" title="099-000-00-00"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" />
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-mail-black"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field">Комментарий
+                <textarea class="modal-form-message cursor" name="user-message" placeholder="Введите текст"></textarea>
+            </label>
+            <input type="checkbox" id="accept-policy" class="modal-form-checkbox visually-hidden" 
+            />
+                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a href="#"> Условия договора</a></label>
+            <button class="btn btn-index btn-shadow hero-btn" type="submit">Отправить</button>
+        </form>
+                    </div>
                         </div>
                     </div>
                 </section>
