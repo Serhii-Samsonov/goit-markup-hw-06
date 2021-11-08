@@ -351,7 +351,7 @@ body {
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal-form-wrapper {
@@ -425,7 +425,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -443,7 +442,6 @@ body {
   border-radius: 2px;
   border: 2px solid #212121;
   cursor: pointer;
-
   background-image: url(images/off.svg);
 }
 
@@ -465,6 +463,14 @@ body {
   padding: 10px 55px;
 }
 
+.modal-form-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
 /* -------------about-------------- */
 
 .about {
@@ -771,9 +777,8 @@ body {
   align-items: baseline;
 }
 
-.bottom-address {
-  width: 231px;
-  margin-right: 70px;
+.bootom-address {
+  max-width: 231px;
 }
 
 .footer-icon-title {
